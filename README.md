@@ -18,6 +18,8 @@ A list of all the allowed operations I got:
 - <b>rrb (reverse rotate b):</b> Shift down all elements of stack b by 1.
 - <b>rrr:</b> rra and rrb at the same time.
 
+When the input contains duplicate numbers, alphabetical characters or numbers bigger than or smaller than an integer, the program should output "Error" followed by a newine. When the numbers are already sorted, the program should just return.
+
 
 ### Norm writing
 
