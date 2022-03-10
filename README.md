@@ -3,9 +3,23 @@ This project involves sorting data on a stack, with a limited set of instruction
 
 ## Project description
 <p>Subject document of the project: <a href="push_swap_subject.pdf" target="_blank">push_swap</a></p>
-The objective of this project is to code the printf program. To do this, I learned how to work with variable arguements. 
-Our function had to be able to handle the following conversions: <code>cspdiuxX%</code>
-The allowed functions in this projects are: malloc, free, write, va_start, va_arg, va_copy and va-end.
+Push-swap is a project that makes you think about sorting algorithms. The algorithm you write, has to ouyput the smallest set of operations to sort the set of integers you get.
+A list of all the allowed operations I got:
+- <bold>sa (swap a):</bold> Swap the first 2 elements at the top of stack a. Do nothing if there is only one or no elements.
+- sb (swap b): Swap the first 2 elements at the top of stack b. Do nothing if there is only one or no elements.
+- ss: sa and sb at the same time.
+- pa (push a): Take the first element at the top of b and put it at the top of a.
+Do nothing if b is empty.
+- pb (push b): Take the first element at the top of a and put it at the top of b.
+Do nothing if a is empty.
+- ra (rotate a): Shift up all elements of stack a by 1.
+The first element becomes the last one.
+- rb (rotate b): Shift up all elements of stack b by 1. The first element becomes the last one.
+- rr : ra and rb at the same time.
+- rra (reverse rotate a): Shift down all elements of stack a by 1.
+The last element becomes the first one.
+- rrb (reverse rotate b): Shift down all elements of stack b by 1. The last element becomes the first one.
+- rrr : rra and rrb at the same time.
 
 ### Norm writing
 
@@ -20,9 +34,8 @@ This project is written in accordance to the norm of school 42. Some of the most
 
 First, clone my repository on your computer via the green "code" button on top of this page.
 All the functions can be compiled using my Makefile. This Makefile has several options:
-- run <code>make</code> to create object files for all the standard functions, and a archive library printf.a
-- next: in the main function of my ft_printf.c file, you can test my printf function trying different conversions of your own choice, for example:
-<code>ft_printf("Magic %s is %5d", "number", 42);</code>
+- run <code>make</code> to create object files for all the standard functions.
+- run <code> ./push_swap </code> followed by an arbitrary amount of integers, each separated by a space. My program will output a list of operations used to sort the numbers you have inputted.
 - run <code>make clean</code> to delete all the object files
 - run <code>make fclean</code> to delete all the object files and the printf.a file.
 - run <code>make re</code> recompile the library.
