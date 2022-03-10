@@ -5,17 +5,18 @@ This project involves sorting data on a stack, with a limited set of instruction
 <p>Subject document of the project: <a href="push_swap_subject.pdf" target="_blank">push_swap</a></p>
 Push-swap is a project that makes you think about sorting algorithms. The algorithm you write, has to ouyput the smallest set of operations to sort the set of integers you get.
 A list of all the allowed operations I got:
+
 - <b>sa (swap a):</b> Swap the first 2 elements at the top of stack a. Do nothing if there is only one or no elements.
-- sb (swap b): Swap the first 2 elements at the top of stack b. Do nothing if there is only one or no elements.
-- ss: sa and sb at the same time.
-- pa (push a): Take the first element at the top of b and put it at the top of a.
-- pb (push b): Take the first element at the top of a and put it at the top of b.
-- ra (rotate a): Shift up all elements of stack a by 1.
-- rb (rotate b): Shift up all elements of stack b by 1.
-- rr: ra and rb at the same time.
-- rra (reverse rotate a): Shift down all elements of stack a by 1.
-- rrb (reverse rotate b): Shift down all elements of stack b by 1.
-- rrr: rra and rrb at the same time.
+- <b>sb (swap b)</b>: Swap the first 2 elements at the top of stack b. Do nothing if there is only one or no elements.
+- <b>ss:</b> sa and sb at the same time.
+- <b>pa (push a):</b> Take the first element at the top of b and put it at the top of a.
+- <b>pb (push b):</b> Take the first element at the top of a and put it at the top of b.
+- <b>a (rotate a):</b> Shift up all elements of stack a by 1.
+- <b>rb (rotate b):</b> Shift up all elements of stack b by 1.
+- <b>rr:</b> ra and rb at the same time.
+- <b>rra (reverse rotate a):</b> Shift down all elements of stack a by 1.
+- <b>rrb (reverse rotate b):</b> Shift down all elements of stack b by 1.
+- <b>rrr:</b> rra and rrb at the same time.
 
 
 ### Norm writing
